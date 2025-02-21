@@ -1,0 +1,207 @@
+.pricing-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 24px;
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 0 2px rgba(255, 255, 255, 0.05),
+    inset 0 0 32px rgba(255, 255, 255, 0.02);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.05) 25%,
+      transparent 50%
+    );
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 
+      0 12px 40px rgba(0, 0, 0, 0.5),
+      0 0 0 2px rgba(255, 255, 255, 0.15),
+      inset 0 0 32px rgba(255, 255, 255, 0.03);
+
+    &::before {
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.2) 35%,
+        transparent 70%
+      );
+    }
+  }
+
+  &--popular {
+    background: linear-gradient(135deg, 
+      rgba(130, 87, 229, 0.08),
+      rgba(92, 51, 188, 0.04)
+    );
+    max-width: 300px;
+    height: 460px;
+    padding: 32px;
+    margin-top: -10px;
+    z-index: 1;
+
+    .pricing-card__title {
+      font-size: 22px;
+    }
+
+    .pricing-card__price {
+      font-size: 52px;
+    }
+
+    .pricing-card__currency {
+      font-size: 26px;
+    }
+
+    .pricing-card__feature {
+      font-size: 15px;
+      padding: 8px 0;
+    }
+
+    &:hover {
+      border-color: rgba(130, 87, 229, 0.3);
+      box-shadow: 
+        0 12px 40px rgba(0, 0, 0, 0.5),
+        0 0 0 2px rgba(130, 87, 229, 0.3),
+        inset 0 0 32px rgba(130, 87, 229, 0.05);
+    }
+
+    &:hover::before {
+      background: linear-gradient(
+        135deg,
+        rgba(130, 87, 229, 0.6),
+        rgba(130, 87, 229, 0.3) 35%,
+        transparent 70%
+      );
+    }
+
+    .pricing-card__button {
+      background: linear-gradient(135deg, #8257e5, #5c33bc);
+      box-shadow: 0 4px 16px rgba(130, 87, 229, 0.3);
+      padding: 14px;
+      font-size: 16px;
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(130, 87, 229, 0.9);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(130, 87, 229, 0.3);
+  }
+
+  &__header {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 12px;
+    opacity: 0.95;
+  }
+
+  &__price-container {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+
+  &__currency {
+    color: #fff;
+    font-size: 24px;
+    opacity: 0.95;
+  }
+
+  &__price {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0.95;
+  }
+
+  &__period {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin-left: 4px;
+  }
+
+  &__features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    padding: 6px 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__check {
+    color: #8257e5;
+    font-size: 16px;
+    opacity: 0.95;
+  }
+
+  &__button {
+    margin-top: auto;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.12);
+      transform: translateY(-2px);
+    }
+  }
+} 
