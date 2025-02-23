@@ -2,5 +2,7 @@
     "codesnap.boxShadow": "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px",
     "codesnap.showLineNumbers": false,
     "codesnap.transparentBackground": true,
-    "codesnap.backgroundColor": "#181818"
+    "codesnap.backgroundColor": "#181818",
+    "codesnap.realLineNumbers": false,
+    "codesnap.showWindowTitle": false
 }
