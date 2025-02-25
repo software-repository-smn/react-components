@@ -1,14 +1,14 @@
 import React from 'react';
 import "./app.scss"
-import Sidebar from './components/Sidebar';
-import PricingCard from './components/PricingCard';
-import { pricingPlans } from './contents/pricing-data';
+import Sidebar from './components/layouts/sidebar';
+import PricingCard from './components/block/pricing-card';
+import { pricingPlans } from './contents/pricing-data'
 
 function App() {
   return (
     <div className="app">
-      <Sidebar isOpen={false} />
-      <Sidebar />
+      {/* <Sidebar isOpen={false} />
+      <Sidebar /> */}
       {/* {pricingPlans.map((plan) => (
         <PricingCard
           title={plan.title}

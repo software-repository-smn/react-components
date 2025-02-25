@@ -1,0 +1,40 @@
+.tabs {
+    width: 300px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    background-color: #151515;
+    box-sizing: border-box;
+    padding: 0.25rem;
+    font-size: 14px;
+    border: 1px solid #3b3b3b;
+
+    &__tab-item {
+        flex: 1 1 auto;
+        text-align: center;
+        transition: all .5s ease;
+
+        &>input {
+            display: none;
+        }
+
+        &>input:checked+.label {
+            background-color: #334154;
+            border-color: #555555;
+        }
+    }
+
+    &__tab-name {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        border: none;
+        padding: .5rem 0;
+        color: #fff;
+        transition: all .5s ease;
+        border: 1px solid transparent;
+    }
+}

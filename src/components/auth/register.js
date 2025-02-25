@@ -1,4 +1,5 @@
 import React from 'react'
+import "../../styles/register.scss"
 
 const RegisterForm = () => {
     return (
@@ -22,4 +23,5 @@ const RegisterForm = () => {
         </div>
     )
 }
+
 export default RegisterForm

@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
+import "../../styles/react-select.scss"
 
 const ReactSelect = () => {
     const [isOpen, setIsOpen] = useState(false)

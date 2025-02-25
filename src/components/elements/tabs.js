@@ -1,4 +1,5 @@
 import React from 'react'
+import "../../styles/tabs.scss"
 
 const Tabs = () => {
     return (

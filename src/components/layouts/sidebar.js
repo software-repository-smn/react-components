@@ -1,9 +1,9 @@
-import "../styles/sidebar.scss";
+import "../../styles/sidebar.scss";
 import { createRef, useRef, useState } from "react";
 import { FaEllipsisV } from "react-icons/fa";
 import { IoIosArrowDown, IoMdMenu } from "react-icons/io";
-import { menus, bottomMenus } from "../contents/options";
-import { getClassName } from "../utils/utils";
+import { menus, bottomMenus } from "../../contents/options";
+import { getClassName } from "../../utils/utils";
 
 const Sidebar = ({ isOpen = true }) => {
     const subRef = useRef(menus.map((x) => createRef(x)));
