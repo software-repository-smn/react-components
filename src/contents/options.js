@@ -12,19 +12,19 @@ export const menus = [
     {
         key: 1,
         title: "Home",
-        icon: <img src={home} />,
+        icon: <img src={home} alt="" />,
         children: null
     },
     {
         key: 2,
         title: "Dashboard",
-        icon: <img src={dashboard} />,
+        icon: <img src={dashboard} alt="" />,
         children: null
     },
     {
         key: 3,
         title: "Projects",
-        icon: <img src={projects} />,
+        icon: <img src={projects} alt="" />,
         children: [
             { key: "3_1", title: "Project 1" },
             { key: "3_2", title: "Project 2" },
@@ -36,7 +36,7 @@ export const menus = [
     {
         key: 4,
         title: "Tasks",
-        icon: <img src={tasks} />,
+        icon: <img src={tasks} alt="" />,
         children: [
             { key: "4_1", title: "Task 1" },
             { key: "4_2", title: "Task 2" },
@@ -48,7 +48,7 @@ export const menus = [
     {
         key: 5,
         title: "Reporting",
-        icon: <img src={reporting} />,
+        icon: <img src={reporting} alt="" />,
         children: [
             { key: "5_1", title: "Overview" },
             { key: "5_2", title: "Notifications" },
@@ -59,7 +59,7 @@ export const menus = [
     {
         key: 6,
         title: "Users",
-        icon: <img src={users} />,
+        icon: <img src={users} alt="" />,
         children: [
             { key: "6_1", title: "User 1" },
             { key: "6_2", title: "User 2" },
@@ -73,17 +73,17 @@ export const bottomMenus = [
     {
         key: "notifications",
         title: "Notifications",
-        icon: <img src={notification} />,
+        icon: <img src={notification} alt="" />,
         count: 5
     },
     {
         key: "support",
         title: "Support",
-        icon: <img src={support} />
+        icon: <img src={support} alt="" />
     },
     {
         key: "setting",
         title: "Setting",
-        icon: <img src={settings} />
+        icon: <img src={settings} alt="" />
     }
 ]

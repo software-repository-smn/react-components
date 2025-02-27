@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export const getClassName = (defaultClass = '', ifExistClassList, conditionClassList) => {
     let className = defaultClass;
     if (Array.isArray(ifExistClassList)) {
@@ -19,4 +21,11 @@ export const getClassName = (defaultClass = '', ifExistClassList, conditionClass
         className += ` ${conditionClassList.className}`;
     }
     return className.trim();
+};
+
+export const useInputHandler = (initialState = '') => {
+    const [state, setState] = useState(initialState);
+    const inputHandler = event => setState(event.target.value);
+
+    return [state, inputHandler];
 };

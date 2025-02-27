@@ -1,0 +1,142 @@
+$color-dark: #1c2128;
+$color-dark-2: #22272e;
+$color-dark-3: #2e3239;
+$secondary: #595e67;
+$secondary-2: #35373a;
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-dark;
+    min-width: 600px;
+    padding: 60px 20px 40px;
+    border-radius: 20px;
+    border: 1px solid $secondary-2;
+
+    &__title {
+        font-size: 35px;
+        font-weight: 600;
+        padding-bottom: 8px;
+        color: #fff;
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        color: #bababa;
+        font-weight: 500;
+        padding-bottom: 25px;
+
+        b {
+            font-weight: 700;
+            color: #d1d1d1;
+        }
+    }
+
+    &__login {
+        display: block;
+        padding-top: 40px;
+        min-width: 370px;
+    }
+
+    &__input-wrapper {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid $color-dark-3;
+        transition: all .3s ease;
+
+        &:not(:last-child) {
+            margin-bottom: 13px;
+        }
+
+        &:hover,
+        &:focus-within {
+            border-color: $secondary;
+
+            .auth__input {
+                border-color: $secondary;
+            }
+        }
+    }
+
+    &__input-check,
+    &__input-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 50px;
+    }
+
+    &__input {
+        flex: 1;
+        position: relative;
+        border: unset;
+        outline: unset;
+        background-color: transparent;
+        color: #e3e3e3;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 5px 0 5px 16px;
+        border-left: 1px solid $color-dark-3;
+        transition: all .3s ease;
+    }
+
+    &__button {
+        border-radius: 8px;
+        background-color: #fff;
+        border: 1px solid #fff;
+        color: #1a1a1a;
+        width: 100%;
+        padding: 14px 20px;
+        font-weight: 600;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: all .2s ease;
+
+        &:hover {
+            border-color: $secondary;
+            background-color: $color-dark-3;
+            color: #fff;
+        }
+    }
+
+    &__continue-with {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        padding-top: 40px;
+        border-top: 1px solid $color-dark-3;
+        gap: 20px;
+
+        &::before {
+            position: absolute;
+            content: "Or continue with";
+            background-color: $color-dark;
+            color: #e3e3e3;
+            font-weight: 400;
+            padding: 0 20px;
+            top: -12px;
+        }
+    }
+
+    &__icon-box {
+        display: grid;
+        place-items: center;
+        background-color: $color-dark-2;
+        border: 1px solid $color-dark-3;
+        transition: all .3s ease;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+}
