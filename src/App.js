@@ -1,25 +1,42 @@
 import React from 'react';
 import "./app.scss"
-import Sidebar from './components/layouts/sidebar';
-import PricingCard from './components/block/pricing-card';
-import { pricingPlans } from './contents/pricing-data'
-import Auth from './components/auth/auth';
+import Accordion from './components/block/accordion-2';
 
 function App() {
   return (
     <div className="app">
-      <Auth />
-      {/* <Sidebar isOpen={false} />
-      <Sidebar /> */}
-      {/* {pricingPlans.map((plan) => (
-        <PricingCard
-          title={plan.title}
-          price={plan.price}
-          period={plan.period}
-          features={plan.features}
-          isPopular={plan.isPopular}
-        />
-      ))} */}
+      <Accordion />
+      {/* <div className='layout'>
+        <div className='navbar'></div>
+        <div className='sidebar'></div>
+        <div className='main'></div>
+        <div className='settings'></div>
+        <div className='footer'></div>
+      </div> */}
+      {/* <div className='flex'>
+        <div className='card'>1</div>
+        <div className='card'>2</div>
+        <div className='card'>3</div>
+        <div className='card'>4</div>
+        <div className='card'>5</div>
+        <div className='card'>6</div>
+        <div className='card'>7</div>
+        <div className='card'>8</div>
+        <div className='card'>9</div>
+        <div className='card'>10</div>
+      </div> */}
+      {/* <div className='grid'>
+        <div className='card'>1</div>
+        <div className='card'>2</div>
+        <div className='card'>3</div>
+        <div className='card'>4</div>
+        <div className='card'>5</div>
+        <div className='card'>6</div>
+        <div className='card'>7</div>
+        <div className='card'>8</div>
+        <div className='card'>9</div>
+        <div className='card'>10</div>
+      </div> */}
     </div>
   );
 }
