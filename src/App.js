@@ -1,6 +1,7 @@
 import React from 'react';
 import "./app.scss"
 import Accordion from './components/block/accordion-2';
+import Dropdown from './components/elements/dropdown-2';
 
 function App() {
   return (
